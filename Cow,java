@@ -1,0 +1,22 @@
+package FarmAnimals;
+
+public class Cow extends FarmAnimal{
+    private boolean spotted;
+    private boolean moooo;
+
+    public Cow(String name, String gender, int weight, int age, boolean spotted, boolean moooo){
+
+        // default constructor
+        super(name, gender, weight, age);
+
+        this.spotted = spotted;
+        this.moooo = moooo;
+    }
+
+    // getters and setters for smallBeak and crowing ( that's not shown)
+
+    @Override
+    public String toString(){
+        return super.toString() + " Cow[Spotted=" + spotted + ", Moooo=" + moooo + "]";
+    }
+}
